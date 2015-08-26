@@ -15,4 +15,7 @@ bundlestart:bundle
 		--browser=$($BROWSER) \
 		--startPath='dist/index.html'
 
+start:
+	./node_modules/.bin/browser-sync start --server --files='**,!jspm_packages/**,!node_modules/**' --browser=$($BROWSER)
+
 .PHONY: bundle
